@@ -1,9 +1,68 @@
 
-
+body{
+  overflow-x: hidden;
+  color: #e0e4e7;
+}
 /*Header section*/
+.video-background{
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.video-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#video {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+  z-index: -1000;
+}
+video { 
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+  background: url('') no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
+}
+
+.header-action{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
 /*End of header section*/
 
 /*Navbar*/
+.navbar{
+  background: rgb(0, 0, 0, 0.0);
+  text-align: center;
+}
+.navbar-brand img{
+  height: 11rem;
+  padding: 0%;
+}
 /*End of navbar*/
 
 /*Release section*/
