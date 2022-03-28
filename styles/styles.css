@@ -71,7 +71,7 @@ video {
   height: 25vh;
 }
 .navbar-brand img{
-  height: 11rem;
+  height: 12rem;
   padding: 0%;
 }
 
@@ -105,12 +105,31 @@ video {
   align-items: center;
 }
 
-.img-thumbnail{
-  width: 45rem;
+.card{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 45rem;
 }
 
-.release p{
-  width: 40%;
+.card-body span{
+  font-size: 50px;
+  margin: 20px;
+  color: #e0e4e7;
+}
+
+.card-text{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-img-top{
+  width: 25rem;
+  height: 25rem;
 }
 /*End of release section*/
 
@@ -134,9 +153,6 @@ video {
   width: 40%;
 }
 /*End of about section*/
-
-/*Band pic*/
-/*End of band pic*/
 
 /*Contact section*/
 .contact{
