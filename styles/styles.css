@@ -6,7 +6,8 @@ body{
 /*Header section*/
 .video-background{
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.0);
 }
 
 .video-wrap {
@@ -52,10 +53,17 @@ video {
   justify-content: flex-end;
   align-items: center;
 }
+
+.btn{
+  width: 10rem;
+  height: 3rem;
+  background: rgb(0, 0, 0, 0.2);
+  color: #e0e4e7;
+}
 /*End of header section*/
 
 /*Navbar*/
-.navbar{
+.logo-navbar{
   background: rgb(0, 0, 0, 0.0);
   text-align: center;
 }
