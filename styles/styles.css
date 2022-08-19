@@ -1,11 +1,11 @@
-
-body{
+body {
   color: #e0e4e7;
   padding-bottom: 5rem;
   background-color: black;
 }
+
 /*Header section*/
-.video-background{
+.video-background {
   width: 100%;
   height: 60vh;
   background-color: rgba(0, 0, 0, 0.0);
@@ -19,6 +19,7 @@ body{
   width: 100%;
   height: 100%;
 }
+
 #video {
   position: fixed;
   display: block;
@@ -29,11 +30,12 @@ body{
   background-size: cover;
   background-position: center center;
   -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  transform: translateZ(0);
   will-change: transform;
   z-index: -1000;
 }
-video { 
+
+video {
   position: relative;
   top: 50%;
   left: 50%;
@@ -48,14 +50,14 @@ video {
   transition: 1s opacity;
 }
 
-.header-action{
+.header-action {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
 }
 
-.btn{
+.btn {
   width: 10rem;
   height: 3rem;
   background: rgb(0, 0, 0, 0.2);
@@ -63,13 +65,13 @@ video {
   text-decoration: none;
 }
 
-@media (min-width: 768px){
-  .video-background{
+@media (min-width: 768px) {
+  .video-background {
     width: 100%;
     height: 75vh;
     background-color: rgba(0, 0, 0, 0.0);
   }
-  
+
   .video-wrap {
     clip: rect(0, auto, auto, 0);
     position: absolute;
@@ -78,6 +80,7 @@ video {
     width: 100%;
     height: 100%;
   }
+
   #video {
     position: fixed;
     display: block;
@@ -88,11 +91,12 @@ video {
     background-size: cover;
     background-position: center center;
     -webkit-transform: translateZ(0);
-            transform: translateZ(0);
+    transform: translateZ(0);
     will-change: transform;
     z-index: -1000;
   }
-  video { 
+
+  video {
     position: relative;
     top: 50%;
     left: 50%;
@@ -106,15 +110,15 @@ video {
     background-size: cover;
     transition: 1s opacity;
   }
-  
-  .header-action{
+
+  .header-action {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
   }
-  
-  .btn{
+
+  .btn {
     width: 10rem;
     height: 3rem;
     background: rgb(0, 0, 0, 0.2);
@@ -122,20 +126,22 @@ video {
     text-decoration: none;
   }
 }
+
 /*End of header section*/
 
 /*Navbar*/
-.logo-navbar{
+.logo-navbar {
   background: rgb(0, 0, 0, 0.0);
   text-align: center;
   height: 25vh;
 }
-.navbar-brand img{
+
+.navbar-brand img {
   height: 12rem;
   padding: 0%;
 }
 
-.navbar{
+.navbar {
   width: 100%;
   position: relative;
   bottom: 0;
@@ -147,14 +153,14 @@ video {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.nav-link{
+.nav-link {
   padding: 1rem;
   text-decoration: none;
   color: #e0e4e7;
 }
 
 @media (min-width: 768px) {
-  .navbar{
+  .navbar {
     width: 100%;
     position: fixed;
     bottom: 0;
@@ -165,17 +171,18 @@ video {
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.5);
   }
-  
-  .nav-link{
+
+  .nav-link {
     padding: 1rem;
     text-decoration: none;
     color: #e0e4e7;
   }
 }
+
 /*End of navbar*/
 
 /*Release section*/
-.release{
+.release {
   background-color: black;
   width: 100%;
   height: 100%;
@@ -185,7 +192,7 @@ video {
   align-items: center;
 }
 
-.card{
+.card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -193,13 +200,13 @@ video {
   height: 45rem;
 }
 
-.card-body span{
+.card-body span {
   font-size: 50px;
   margin: 20px;
   color: #e0e4e7;
 }
 
-.card-text{
+.card-text {
   width: 90%;
   height: 100%;
   display: flex;
@@ -209,62 +216,63 @@ video {
   text-align: center;
 }
 
-.card-text h1{
+.card-text h1 {
   text-align: center;
 }
 
-.card-img-top{
+.card-img-top {
   width: 20rem;
   height: 20rem;
 }
 
-@media (min-width: 768px){
-  .release{
-  background-color: black;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+@media (min-width: 768px) {
+  .release {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 45rem;
+  }
+
+  .card-body span {
+    font-size: 50px;
+    margin: 20px;
+    color: #e0e4e7;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .card-text {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-img-top {
+    width: 25rem;
+    height: 25rem;
+  }
 }
 
-.card{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 45rem;
-}
-
-.card-body span{
-  font-size: 50px;
-  margin: 20px;
-  color: #e0e4e7;
-}
-
-.card-body{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.card-text{
-  width: 60%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.card-img-top{
-  width: 25rem;
-  height: 25rem;
-}
-}
 /*End of release section*/
 
 /*About section*/
-.about{
+.about {
   width: 100%;
   height: 45rem;
   display: flex;
@@ -275,23 +283,23 @@ video {
   background-size: cover;
 }
 
-.about h1{
+.about h1 {
   margin-top: 2rem;
 }
 
-.about p{
+.about p {
   width: 90%;
   height: fit-content;
 }
 
-.about img{
+.about img {
   width: 90%;
 }
 
-@media (min-width: 768px){
-  .about{
+@media (min-width: 768px) {
+  .about {
     width: 100%;
-    height: 50rem;
+    height: 60rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -299,23 +307,24 @@ video {
     background-image: url(../image/aerial-view-of-amazing-scenery-with-light-beams-shining-through-foggy-dark-forest-with-pine-trees-at-autumn-sunrise-beautiful-wild-woodland-at-dawn.jpg);
     background-size: cover;
   }
-  
-  .about h1{
+
+  .about h1 {
     margin-top: 2rem;
   }
 
-  .about img{
+  .about img {
     width: 80%;
   }
-  
-  .about p{
+
+  .about p {
     width: 70%;
   }
 }
+
 /*End of about section*/
 
 /*Contact section*/
-.contact{
+.contact {
   width: 100%;
   height: 40rem;
   display: flex;
@@ -324,23 +333,23 @@ video {
   align-items: center;
 }
 
-.contact h1{
+.contact h1 {
   padding: 1rem;
 }
 
-.contact img{
+.contact img {
   width: 90%;
   margin-bottom: 2rem;
 }
 
-.contact span{
+.contact span {
   display: block;
   margin: 1rem;
   font-size: 2rem;
 }
 
-@media (min-width: 768px){
-  .contact{
+@media (min-width: 768px) {
+  .contact {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -348,24 +357,25 @@ video {
     justify-content: center;
     align-items: center;
   }
-  
-  .contact-links{
+
+  .contact-links {
     display: flex;
   }
 
-  .contact img{
+  .contact img {
     height: 18rem;
     width: 39rem;
     margin-bottom: 2rem;
   }
-  
-  .contact span{
+
+  .contact span {
     margin: 1rem;
     font-size: 3rem;
     display: flex;
     flex-direction: row;
   }
 }
+
 /*End of contact section*/
 
 /*Footer*/
