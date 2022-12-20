@@ -1,21 +1,84 @@
-@import url('https://fonts.googleapis.com/css2?family=Domine:wght@600;700;800&family=Source+Sans+Pro:wght@400;600;700&display=swap');
-
 
 :root {
-    --brand: #B33030;
-    --body: #606060;
-    --dark: #19282F;
+    --brand: #AAEF50;
+    --body: #ee2525;
+    --dark: #d1dfe6;
     --border-radius: 4px;
     --shadow: 0px 4px 60px rgba(0, 0, 0, 0.14);
 }
 
 /* reset & helpers */
+    body {
+        font-family: "Source Sans Pro", sans-serif;
+        line-height: 1.7;
+        color: var(--dark);
+    }
 
+    h1,h2,h3,h4,h5,h6 {
+        font-weight: 700;
+        color: var(--body);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    a {
+        color: var(--dark);
+        text-decoration: none;
+        transition: all 0.4s linear;
+    }
+
+    a:hover {
+        color: var(--brand);
+    }
+
+    img {
+        width: 100%;
+    }
+
+    section {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
 
 /* Hero */
+    #hero {
+        min-height: 100vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/Ext\ 2\ ok.jpg);
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items:flex-end;
+        padding-bottom: 300px;
+    }
+
+    #hero h1,
+    #hero h2 {
+        color: white;
+        
+    }
+
+    #hero h2 {
+        margin: 12px auto 28px auto;
+    }
 
 /* navbar */
+    .navbar.bg-dark{
+        border-bottom: 1px;
+    }
 
+    .navbar .navbar-nav .nav-link {
+        font-weight: 700;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+
+    .navbar .navbar-nav .nav-link:hover,
+    .navbar .navbar-nav .nav-link.active {
+        color: var(--brand);
+    }
 /* services */
 
 /* cta */
