@@ -35,7 +35,7 @@
         font-weight: 700;
         font-size: 14px,;
     }
-    
+
     img {
         width: 100%;
     }
@@ -92,14 +92,32 @@
     .navbar .navbar-nav .nav-link.active {
         color: var(--brand);
     }
+
 /* discografía */
     .section-intro {
         margin-bottom: 35px;
         text-align: center;
     }
+
 /* cta */
 
-/* portfolio */
+/* shows */
+
+.show-wrapper {
+    height: 100%;
+    overflow: hidden;
+}
+
+.show-wrapper img {
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.4s ease;
+}
+
+.show-wrapper:hover img {
+    transform: scale(1.2);
+    filter: brightness(2);
+}
 
 /* reviews */
 
