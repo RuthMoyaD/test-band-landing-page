@@ -99,7 +99,15 @@
         text-align: center;
     }
 
-/* cta */
+
+/*space*/
+
+#space {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/Ext\ 2\ ok.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
 
 /* shows */
 
@@ -162,8 +170,74 @@
  
 
 /* team */
+.team-member {
+    text-align: center;
+}
 
-/* milestone */
+.team-member .team-member-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.team-member img {
+    transition: all 0.5s ease;
+}
+
+.social-links {
+    display: flex;
+}
+
+.social-links a {
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.social-links a:hover {
+    background-color: var(--brand);
+    color: white;
+}
+
+.team-member .social-links {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: all 0.5s ease;
+}
+
+.team-member h5 {
+    margin-top: 24px;
+    margin-bottom: 4px;
+}
+
+.team-member:hover .social-links {
+    bottom: 20px;
+    opacity: 1;
+}
+
+.team-member:hover img {
+    transform: scale(1.1);
+}
+
+/* */
+
+#milestone {
+    background: linear-gradient(rgba rgba(0, 0, 0, 0.6)), rgba(0, 0, 0, 0.6), url(../img/Via\ ok\ PARA\ WEB.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
 
 /* blog */
 
