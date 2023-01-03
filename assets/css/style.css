@@ -240,17 +240,24 @@
 
 
 /* blog */
+.bio-container {
+    background-color: black;
+    /*background-image: url(../img/Ext\ 2\ ok.jpg);*/
+    background-size: cover;
+    background-position: center;
+}
+
+.blog {
+    text-align: center;
+}
 
 .blog img {
     border-top-left-radius: var(--border-radius);
     border-top-right-radius: var(--border-radius);
 }
 
-.blog .tag {
-    padding: 4px 12px;
-    text-transform: uppercase;
-    font-size: 10px;
-    font-weight: 700;
+.blog .content {
+    padding: 28px;
 }
 
 /* contact */
